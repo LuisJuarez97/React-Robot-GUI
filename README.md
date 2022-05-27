@@ -2,6 +2,23 @@
 
 This projects is a 6 DOF Robot GUI which allows to user to control in offline and online mode.
 
+## Cloning this repository
+```
+git clone https://github.com/LuisJuarez97/React-Robot-GUI.git
+```
+
+## Running project
+This is a react app project. If you have not installed [nodejs] yet, you must do it first.\
+If you have installed nodejs, now you must navigate into the project folder and install dependencies.\
+```
+cd React-Robot-GUI
+npm i
+```
+Finally, start the project.
+```
+npm start
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
