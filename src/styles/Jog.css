@@ -1,0 +1,21 @@
+.jog-container {
+  border: 1px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  width: 50px;
+}
+
+.buttons-and-range-container {
+  width: auto;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
