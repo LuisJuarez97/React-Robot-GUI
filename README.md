@@ -9,7 +9,7 @@ git clone https://github.com/LuisJuarez97/React-Robot-GUI.git
 
 ## Running project
 This is a react app project. If you have not installed [nodejs](https://nodejs.org/) yet, you must do it first.\
-If you have installed nodejs, now you must navigate into the project folder and install dependencies.\
+If you have installed nodejs, now you must navigate into the project folder and install dependencies.
 ```
 cd React-Robot-GUI
 npm i
