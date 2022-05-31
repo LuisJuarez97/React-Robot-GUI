@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import JointContext from "../context/Joint/JointContext";
-import Jog from "./Jog";
-import RoundCheckBox from "./RoundCheckBox";
-import '../styles/JoggingPanel.css'
+import JointContext from "../../../context/Joint/JointContext";
+import Jog from "../molecules/Jog";
+import RoundCheckBox from "../atoms/RoundCheckBox";
+import "./JoggingPanel.css";
 
 const JoggingPanel = () => {
   const { joints } = useContext(JointContext);

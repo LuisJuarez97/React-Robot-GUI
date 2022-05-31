@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
-import JointContext from "../context/Joint/JointContext";
-import "../styles/Jog.css";
+import JointContext from "../../../context/Joint/JointContext";
+import "./Jog.css";
 
 function Jog({ joint }) {
   const { joints, focusClear, changeJointAngle } = useContext(JointContext);
@@ -27,8 +27,8 @@ function Jog({ joint }) {
 
   const handleMouseDown = () => {
     let startTime = new Date();
-    console.log(startTime)
-  }
+    console.log(startTime);
+  };
 
   return (
     <div className="jog-container">
@@ -45,7 +45,10 @@ function Jog({ joint }) {
         }}
       />
       <div className="buttons-and-range-container">
-        <button onClick={() => handleClick(joint, jointAngle - 1)} onMouseDown={handleMouseDown}>
+        <button
+          onClick={() => handleClick(joint, jointAngle - 1)}
+          onMouseDown={handleMouseDown}
+        >
           {"<"}
         </button>
         <input
@@ -75,7 +78,7 @@ const validateNumber = (value) => {
   return res;
 };
 
-document.addEventListener("keypress", function (evt) {
+document.addEventListener("keypress", function(evt) {
   // If event isn't ENTER key
   if (evt.key !== "Enter") return;
   let element = evt.target;

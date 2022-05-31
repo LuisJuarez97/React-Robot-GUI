@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 import "./App.css";
-import JoggingPanel from "./components/JoggingPanel";
+import GraphicalInterface from "./components/pages/GraphicalInterface";
 import JointState from "./context/Joint/JointState";
 
 function App() {
   return (
     <JointState>
-      <JoggingPanel />
+      <GraphicalInterface />
     </JointState>
   );
 }

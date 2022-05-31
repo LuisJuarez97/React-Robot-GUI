@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import JointContext from "../context/Joint/JointContext";
-import "../styles/RoundCheckBox.css";
+import JointContext from "../../../context/Joint/JointContext";
+import "./RoundCheckBox.css";
 
 const RoundCheckBox = () => {
   const { focusClear, toggleFocusClear } = useContext(JointContext);

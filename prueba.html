@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .wrapper > div {
+        background: orange;
+        opacity: 50%;
+      }
+      .wrapper {
+        display: grid;
+        grid-template-columns: repeat(15, 1fr);
+        grid-template-rows: repeat(40, 1fr);
+        grid-gap: 2px;
+        grid-auto-rows: minmax(100px, 1vh);
+        margin: 0;
+        padding: 0;
+      }
+      .one {
+        grid-column: 1 / 16;
+        grid-row: 1 / 2;
+      }
+      .two {
+        grid-column: 1 / 4;
+        grid-row: 2 / 41;
+      }
+      .three {
+        grid-column: 4 / 11;
+        grid-row: 2 / 7;
+      }
+      .four {
+        grid-column: 4 / 11;
+        grid-row: 7 / 41;
+      }
+      .five {
+        grid-column: 11 / 16;
+        grid-row: 2 / 27;
+      }
+      .six {
+        grid-column: 11 / 16;
+        grid-row: 27 / 41;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="one">One</div>
+      <div class="two">Two</div>
+      <div class="three">Three</div>
+      <div class="four">Four</div>
+      <div class="five">Five</div>
+      <div class="six">Six</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+#wrapper > div {
+  background: rgb(31, 31, 33);
+}
+#wrapper {
+  background: rgb(100, 100, 100);
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  grid-gap: 3px;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 0;
+  padding: 0;
+}
+#menu-bar {
+  grid-column: 1 / 16;
+  grid-row: 1 / 2;
+}
+#jogging-panel {
+  grid-column: 1 / 4;
+  grid-row: 2 / 21;
+}
+#robot-position-panel {
+  grid-column: 4 / 11;
+  grid-row: 2 / 4;
+}
+#robot-cad-window {
+  grid-column: 4 / 11;
+  grid-row: 4 / 21;
+}
+#programming-panel {
+  grid-column: 11 / 16;
+  grid-row: 2 / 13;
+}
+#command-panel {
+  grid-column: 11 / 16;
+  grid-row: 13 / 21;
+}
